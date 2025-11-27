@@ -391,7 +391,7 @@ Update backend `.env` with testnet RPC URL and contract address.
 
 8. **Gas Optimization**: The contract uses mappings for efficient lookups, but stores campaign data in an array for enumeration.
 
-9. **No Reentrancy Protection**: The contract uses OpenZeppelin's SafeERC20 for token transfers, but doesn't include explicit reentrancy guards. For production, consider adding ReentrancyGuard.
+9. **No Reentrancy Protection**: The contract uses OpenZeppelin's SafeERC20 for token transfers, but doesn't include explicit reentrancy guards. For production, we consider adding ReentrancyGuard.
 
 10. **Event Indexing**: Events use indexed parameters for efficient filtering in off-chain applications.
 
